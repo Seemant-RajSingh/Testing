@@ -8,6 +8,6 @@ module.exports = {
     moduleNameMapper: {
       '^@/(.*)$': '<rootDir>/src/$1',
     },
-    setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],  // <-- Add this line
+    setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'], 
   };
   
