@@ -36,7 +36,7 @@ test('Inc by 11 button is only clickable when status is ADMIN', async () => {
     expect(updatedValue).toBe(initialValue + 11); 
   });
 
-  // Changing status back to GUEST, wrapped in act()
+
   await act(async () => {
     store.dispatch(setStatus("GUEST"));
   });
