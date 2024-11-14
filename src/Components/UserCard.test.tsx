@@ -17,7 +17,6 @@ test('Inc by 11 button is only clickable when status is ADMIN', async () => {
 
   expect(incBy11Button).toBeDisabled(); 
 
-  // Wrap state-changing actions in act() to avoid the warning
   await act(async () => {
     store.dispatch(setStatus("ADMIN"));
   });
